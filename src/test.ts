@@ -1,14 +1,26 @@
 interface Dog {
+    type:'dog'
   bark:() => 'kkk'
 }
 
 interface Bird {
+    type:'bird'
     fly:()=>'fly'
 }
 
-type Animal = Dog | Bird
+interface Monky {
+    type:'Monky'
+    punch:()=>'asdf'
+}
 
-const ani: Animal = {
-    bark:()=>'kkk',
-    fly:()=>'fly'
+type Animal = Dog | Bird |Monky
+
+const func = (animal:Animal) =>{
+  if(animal.type === 'bird'){
+    animal.fly()
+  } else if(animal.type === 'dog'){
+     animal.bark()
+  } else {
+      const defa:never = animal
+  }
 }
