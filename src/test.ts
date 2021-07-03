@@ -1,11 +1,14 @@
- const typeNum:number = 9
- const typeAny:any = 'kk'
- const typeUnknown:unknown = 'ddsaf'
+interface Dog {
+  bark:() => 'kkk'
+}
 
- typeNum.toFixed
- typeAny.toFixed
+interface Bird {
+    fly:()=>'fly'
+}
 
- if (typeof typeUnknown === 'number') {
-    typeUnknown.toFixed
- }
- 
+type Animal = Dog | Bird
+
+const ani: Animal = {
+    bark:()=>'kkk',
+    fly:()=>'fly'
+}
