@@ -1,26 +1,23 @@
-interface Dog {
-    type:'dog'
-  bark:() => 'kkk'
+interface User {
+    name:string |number
+    age: number | string
 }
 
-interface Bird {
-    type:'bird'
-    fly:()=>'fly'
+
+const test = (user:User) => {
+     
 }
 
-interface Monky {
-    type:'Monky'
-    punch:()=>'asdf'
+const tes = {
+    name:'kjkjk',
+    age:33,
+    gender:'man'
 }
 
-type Animal = Dog | Bird |Monky
-
-const func = (animal:Animal) =>{
-  if(animal.type === 'bird'){
-    animal.fly()
-  } else if(animal.type === 'dog'){
-     animal.bark()
-  } else {
-      const defa:never = animal
-  }
+const l:User = {
+    name:'kkk',
+    age:88,
+    gender:'kjkj'
 }
+const jjj:User = tes
+test(tes)
