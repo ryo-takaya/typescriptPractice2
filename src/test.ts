@@ -24,3 +24,6 @@ test(tes)
 
 const kjkj:string = 'kkk'
 const ads:string = 777
+const mmm:number = 33
+
+let aa = 33
