@@ -23,3 +23,4 @@ const jjj:User = tes
 test(tes)
 
 const kjkj:string = 'kkk'
+const ads:string = 777
