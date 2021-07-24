@@ -21,3 +21,5 @@ const l:User = {
 }
 const jjj:User = tes
 test(tes)
+
+const kjkj:string = 'kkk'
