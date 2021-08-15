@@ -5,3 +5,5 @@ interface User {
 
 
 asdfasdf
+
+let k = 8
