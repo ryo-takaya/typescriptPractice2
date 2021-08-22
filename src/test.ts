@@ -4,3 +4,5 @@ interface User {
 }
 
 let k = 8
+
+const s = new Date()
