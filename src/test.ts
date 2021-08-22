@@ -3,7 +3,4 @@ interface User {
     age: number | string
 }
 
-
-asdfasdf
-
 let k = 8
